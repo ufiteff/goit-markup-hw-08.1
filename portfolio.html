@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--Fonts start-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--Fonts end-->
+    
+    <link rel="stylesheet" href="./css/main.min.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
+
+    <title>Document</title>
+  </head>
+  <body>
+     <!--Header-->
+     <header class="header-portfolio">
+       <div class="header__container container ">
+        <a class="logo header__logo link" href=""><span class="first-three">Web</span><span class="other">Studio</span></a>
+        <nav class="nav">
+           <ul class="nav__list list ">
+             <li class="nav__item"><a class="nav__link link" href="./index.html"  rel="noopener noreferrer">Студия</a></li>
+                <li class="nav__item"><a class="nav__link nav__link--current link" href="">Портфолио</a></li>
+                <li class="nav__item"><a class="nav__link link" href="">Контакты</a></li>
+            </ul>
+            <div class="mail">
+            <a class="header__mail link" href="mailto:info@devstudio.com">
+            <svg class="mail-icon" width="16px" height="12px">
+              <use href="./imeges/icons/symbol-defs.svg#mail"></use>
+            </svg>
+            info@devstudio.com</a>
+                
+          <a class="header__phone link" href="tel:+380961111111"> 
+            <svg class="mail-icon" width="10px" height="16px">
+              <use href="./imeges/icons/symbol-defs.svg#tel"></use>
+            </svg>
+            +38 096 111 11 11</a>
+            </div>
+        </nav>
+        
+          
+            <button class="menu-btn" type="button" data-menu-open>
+              <svg class="menu-btn-icon" width="40px" height="40px">
+                <use href="./imeges/symbol.svg#burger-menu"></use>
+              </svg>
+            </button>
+        
+      </div>
+      </header>
+      
+        <!--Button-->
+        
+          <section class="portfolio">
+            <div class="container nav-container">  
+            <ul class="btn-nav">
+              <li class="list"><button class="btn-nav__portfolio btn-nav btn1" type="button">Все</button></li> 
+              <li class="list"><button class="btn-nav__portfolio btn-nav btn2" type="button">Веб-сайты</button></li>
+              <li class="list"><button class="btn-nav__portfolio btn-nav btn3" type="button">Приложения</button></li>
+              <li class="list"><button class="btn-nav__portfolio btn-nav btn4" type="button">Дизайн</button></li>
+              <li class="list"><button class="btn-nav__portfolio btn-nav btn5" type="button">Маркетинг</button></li>
+            </ul>
+          
+            <!--Pictures-->
+                <ul class="portfolio__list list">
+                <li class="portfolio__wrapper">
+                  <div class="portfolio__element"><a href=""></a>
+                     <picture>
+                    <!--Descktop-->
+                    <source media="(min-width: 1200px )" 
+                    srcset="./imegesportfolio/photo2/img@1x_lg.webp 1x,
+                    ./imegesportfolio/photo2/img@2x_lg.webp 2x" 
+                    type="image/webp"/>
+                    <source media="(min-width: 1200px )" 
+                    srcset="./imegesportfolio/photo2/img@1x_lg.jpg 1x,
+                    ./imegesportfolio/photo2/img@2x_lg.jpg 2x" 
+                    type="image/jpg"/>
+                    <!--Tablet-->
+                    <source media="(min-width: 768px )" 
+                     srcset="./imegesportfolio/photo2/img@1x_md.webp 1x,
+                    ./imegesportfolio/photo2/img@2x_md.webp 2x"  
+                    type="image/webp"/>
+                    <source media="(min-width: 768px )" 
+                   srcset="./imegesportfolio/photo2/img@1x_md.jpg 1x,
+                    ./imegesportfolio/photo2/img@2x_md.jpg 2x" 
+                    type="image/jpg"/>
+                    <!--Mobile-->
+                    <source media="(max-width: 767px )" 
+                    srcset="./imegesportfolio/photo2/img@1x_ms.webp 1x,
+                    ./imegesportfolio/photo2/img@2x_ms.webp 2x" 
+                    type="image/webp"/>
+                    <source media="(max-width: 767px )" 
+                    srcset="./imegesportfolio/photo2/img@1x_ms.jpg 1x,
+                    ./imegesportfolio/photo2/img@2x_ms.jpg 2x" 
+                    type="image/jpg"/>
+                  <img class="prt-photo" 
+                  src="./imegesportfolio/photo2/img@1x_ms.jpg" 
+                  alt="изображение веб-сайта" 
+                  width="370">
+                  </picture>
+                  
+                
+                  <div class="portfolio__overley">
+                    <p class="portfolio__text--overley">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
+                  </div>
+                </div>
+                <div class="portfolio__team">
+                  <h3 class="portfolio__title">Технокряк</h3>
+                <p class="portfolio__text">Веб-сайт</p>
+              </div>
+            
+              </li>
+                <li class="portfolio__wrapper">
+                      <picture>
+                    <!--Descktop-->
+                    <source media="(min-width: 1200px )" 
+                    srcset="./imegesportfolio/photo2/img@1x_lg-1.webp 1x,
+                    ./imegesportfolio/photo2/img@2x_lg-1.webp 2x" 
+                    type="image/webp"/>
+                    <source media="(min-width: 1200px )" 
+                    srcset="./imegesportfolio/photo2/img@1x_lg-1.jpg 1x,
+                    ./imegesportfolio/photo2/img@2x_lg-1.jpg 2x" 
+                    type="image/jpg"/>
+                    <!--Tablet-->
+                    <source media="(min-width: 768px )" 
+                     srcset="./imegesportfolio/photo2/img@1x_md-1.webp 1x,
+                    ./imegesportfolio/photo2/img@2x_md-1.webp 2x"  
+                    type="image/webp"/>
+                    <source media="(min-width: 768px )" 
+                   srcset="./imegesportfolio/photo2/img@1x_md-1.jpg 1x,
+                    ./imegesportfolio/photo2/img@2x_md-1.jpg 2x" 
+                    type="image/jpg"/>
+                    <!--Mobile-->
+                    <source media="(max-width: 767px )" 
+                    srcset="./imegesportfolio/photo2/img@1x_ms-1.webp 1x,
+                    ./imegesportfolio/photo2/img@2x_ms-1.webp 2x" 
+                    type="image/webp"/>
+                    <source media="(max-width: 767px )" 
+                    srcset="./imegesportfolio/photo2/img@1x_ms-1.jpg 1x,
+                    ./imegesportfolio/photo2/img@2x_ms-1.jpg 2x" 
+                    type="image/jpg"/>
+                   <img class="prt-photo" 
+                  src="./imegesportfolio/photo2/img@1x_ms-1" 
+                  alt="постер волейбола" 
+                  width="370">
+                  </picture>
+                 
+                <div class="portfolio__team">
+                  <h3 class="portfolio__title">Постер New Orlean vs Golden Star</h3>
+                <p class="portfolio__text">Дизайн</p>
+              </div>
+              </li>
+                <li class="portfolio__wrapper">
+                    <picture>
+                    <!--Descktop-->
+                    <source media="(min-width: 1200px )" 
+                    srcset="./imegesportfolio/photo2/img@1x_lg-2.webp 1x,
+                    ./imegesportfolio/photo2/img@2x_lg-2.webp 2x" 
+                    type="image/webp"/>
+                    <source media="(min-width: 1200px )" 
+                    srcset="./imegesportfolio/photo2/img@1x_lg-2.jpg 1x,
+                    ./imegesportfolio/photo2/img@2x_lg-2.jpg 2x" 
+                    type="image/jpg"/>
+                    <!--Tablet-->
+                    <source media="(min-width: 768px )" 
+                     srcset="./imegesportfolio/photo2/img@1x_md-2.webp 1x,
+                    ./imegesportfolio/photo2/img@2x_md-2.webp 2x"  
+                    type="image/webp"/>
+                    <source media="(min-width: 768px )" 
+                   srcset="./imegesportfolio/photo2/img@1x_md-2.jpg 1x,
+                    ./imegesportfolio/photo2/img@2x_md-2.jpg 2x" 
+                    type="image/jpg"/>
+                    <!--Mobile-->
+                    <source media="(max-width: 767px )" 
+                    srcset="./imegesportfolio/photo2/img@1x_ms-2.webp 1x,
+                    ./imegesportfolio/photo2/img@2x_ms-2.webp 2x" 
+                    type="image/webp"/>
+                    <source media="(max-width: 767px )" 
+                    srcset="./imegesportfolio/photo2/img@1x_ms-2.jpg 1x,
+                    ./imegesportfolio/photo2/img@2x_ms-2.jpg 2x" 
+                    type="image/jpg"/>
+                   <img class="prt-photo"
+                  src="/imegesportfolio/photo2/img@1x_ms-2.jpg"
+                   alt="Постер ресторана морепродуктов"
+                   width="370">
+                  </picture>
+                  
+                <div class="portfolio__team">
+                  <h3 class="portfolio__title">Ресторан Seafood</h3>
+                <p class="portfolio__text">Приложение</p>
+              </div>
+              </li>
+                <li class="portfolio__wrapper">
+                    <picture>
+                    <!--Descktop-->
+                    <source media="(min-width: 1200px )" 
+                    srcset="./imegesportfolio/photo2/img@1x_lg-3.webp 1x,
+                    ./imegesportfolio/photo2/img@2x_lg-3.webp 2x" 
+                    type="image/webp"/>
+                    <source media="(min-width: 1200px )" 
+                    srcset="./imegesportfolio/photo2/img@1x_lg-3.jpg 1x,
+                    ./imegesportfolio/photo2/img@2x_lg-3.jpg 2x" 
+                    type="image/jpg"/>
+                    <!--Tablet-->
+                    <source media="(min-width: 768px )" 
+                     srcset="./imegesportfolio/photo2/img@1x_md-3.webp 1x,
+                    ./imegesportfolio/photo2/img@2x_md-3.webp 2x"  
+                    type="image/webp"/>
+                    <source media="(min-width: 768px )" 
+                   srcset="./imegesportfolio/photo2/img@1x_md-3.jpg 1x,
+                    ./imegesportfolio/photo2/img@2x_md-3.jpg 2x" 
+                    type="image/jpg"/>
+                    <!--Mobile-->
+                    <source media="(max-width: 767px )" 
+                    srcset="./imegesportfolio/photo2/img@1x_ms-3.webp 1x,
+                    ./imegesportfolio/photo2/img@2x_ms-3.webp 2x" 
+                    type="image/webp"/>
+                    <source media="(max-width: 767px )" 
+                    srcset="./imegesportfolio/photo2/img@1x_ms-3.jpg 1x,
+                    ./imegesportfolio/photo2/img@2x_ms-3.jpg 2x" 
+                    type="image/jpg"/>
+                  <img class="prt-photo" 
+                  src="./imegesportfolio/photo2/img@1x_ms-3.jpg" 
+                  alt="наушники" 
+                  width="370">
+                  </picture>
+                  
+                <div class="portfolio__team">
+                  <h3 class="portfolio__title">Проект Prime</h3>
+                <p class="portfolio__text">Маркетинг</p>
+              </div>
+              </li>
+                <li class="portfolio__wrapper">
+                    <picture>
+                    <!--Descktop-->
+                    <source media="(min-width: 1200px )" 
+                    srcset="./imegesportfolio/photo2/img@1x_lg-4.webp 1x,
+                    ./imegesportfolio/photo2/img@2x_lg-4.webp 2x" 
+                    type="image/webp"/>
+                    <source media="(min-width: 1200px )" 
+                    srcset="./imegesportfolio/photo2/img@1x_lg-4.jpg 1x,
+                    ./imegesportfolio/photo2/img@2x_lg-4.jpg 2x" 
+                    type="image/jpg"/>
+                    <!--Tablet-->
+                    <source media="(min-width: 768px )" 
+                     srcset="./imegesportfolio/photo2/img@1x_md-4.webp 1x,
+                    ./imegesportfolio/photo2/img@2x_md-4.webp 2x"  
+                    type="image/webp"/>
+                    <source media="(min-width: 768px )" 
+                   srcset="./imegesportfolio/photo2/img@1x_md-4.jpg 1x,
+                    ./imegesportfolio/photo2/img@2x_md-4.jpg 2x" 
+                    type="image/jpg"/>
+                    <!--Mobile-->
+                    <source media="(max-width: 767px )" 
+                    srcset="./imegesportfolio/photo2/img@1x_ms-4.webp 1x,
+                    ./imegesportfolio/photo2/img@2x_ms-4.webp 2x" 
+                    type="image/webp"/>
+                    <source media="(max-width: 767px )" 
+                    srcset="./imegesportfolio/photo2/img@1x_ms-4.jpg 1x,
+                    ./imegesportfolio/photo2/img@2x_ms-4.jpg 2x" 
+                    type="image/jpg"/>
+                  <img class="prt-photo" 
+                  src="./imegesportfolio/photo2/img@1x_ms-4.jpg"
+                   alt="коробки" 
+                   width="370">
+                  </picture>
+                  
+                <div class="portfolio__team">
+                <h3 class="portfolio__title">Проект Boxes</h3>
+                <p class="portfolio__text">Приложение</p>
+              </div>
+              </li>
+                <li class="portfolio__wrapper">
+                      <picture>
+                    <!--Descktop-->
+                    <source media="(min-width: 1200px )" 
+                    srcset="./imegesportfolio/photo2/img@1x_lg-5.webp 1x,
+                    ./imegesportfolio/photo2/img@2x_lg-5.webp 2x" 
+                    type="image/webp"/>
+                    <source media="(min-width: 1200px )" 
+                    srcset="./imegesportfolio/photo2/img@1x_lg-5.jpg 1x,
+                    ./imegesportfolio/photo2/img@2x_lg-5.jpg 2x" 
+                    type="image/jpg"/>
+                    <!--Tablet-->
+                    <source media="(min-width: 768px )" 
+                     srcset="./imegesportfolio/photo2/img@1x_md-5.webp 1x,
+                    ./imegesportfolio/photo2/img@2x_md-5.webp 2x"  
+                    type="image/webp"/>
+                    <source media="(min-width: 768px )" 
+                   srcset="./imegesportfolio/photo2/img@1x_md-5.jpg 1x,
+                    ./imegesportfolio/photo2/img@2x_md-5.jpg 2x" 
+                    type="image/jpg"/>
+                    <!--Mobile-->
+                    <source media="(max-width: 767px )" 
+                    srcset="./imegesportfolio/photo2/img@1x_ms-5.webp 1x,
+                    ./imegesportfolio/photo2/img@2x_ms-5.webp 2x" 
+                    type="image/webp"/>
+                    <source media="(max-width: 767px )" 
+                    srcset="./imegesportfolio/photo2/img@1x_ms-5.jpg 1x,
+                    ./imegesportfolio/photo2/img@2x_ms-5.jpg 2x" 
+                    type="image/jpg"/>
+                  <img class="prt-photo" 
+                  src="./imegesportfolio/photo2/img@1x_ms-5.jpg"
+                   alt="фото веб-сайта" 
+                  width="370">
+                  </picture>
+                   
+                  
+                <div class="portfolio__team">
+                  <h3 class="portfolio__title">Inspiration has no Borders</h3>
+                <p class="portfolio__text">Веб-сайт</p>
+              </div>
+              </li>
+                <li class="portfolio__wrapper">
+                      <picture>
+                    <!--Descktop-->
+                    <source media="(min-width: 1200px )" 
+                    srcset="./imegesportfolio/photo2/img@1x_lg-6.webp 1x,
+                    ./imegesportfolio/photo2/img@2x_lg-6.webp 2x" 
+                    type="image/webp"/>
+                    <source media="(min-width: 1200px )" 
+                    srcset="./imegesportfolio/photo2/img@1x_lg-6.jpg 1x,
+                    ./imegesportfolio/photo2/img@2x_lg-6.jpg 2x" 
+                    type="image/jpg"/>
+                    <!--Tablet-->
+                    <source media="(min-width: 768px )" 
+                     srcset="./imegesportfolio/photo2/img@1x_md-6.webp 1x,
+                    ./imegesportfolio/photo2/img@2x_md-6.webp 2x"  
+                    type="image/webp"/>
+                    <source media="(min-width: 768px )" 
+                   srcset="./imegesportfolio/photo2/img@1x_md-6.jpg 1x,
+                    ./imegesportfolio/photo2/img@2x_md-6.jpg 2x" 
+                    type="image/jpg"/>
+                    <!--Mobile-->
+                    <source media="(max-width: 767px )" 
+                    srcset="./imegesportfolio/photo2/img@1x_ms-6.webp 1x,
+                    ./imegesportfolio/photo2/img@2x_ms-6.webp 2x" 
+                    type="image/webp"/>
+                    <source media="(max-width: 767px )" 
+                    srcset="./imegesportfolio/photo2/img@1x_ms-6.jpg 1x,
+                    ./imegesportfolio/photo2/img@2x_ms-6.jpg 2x" 
+                    type="image/jpg"/>
+                  <img class="prt-photo" 
+                  src="./imegesportfolio/photo2/img@1x_ms-6.jpg"
+                  alt="Разворот книги" 
+                 width="370">
+                  </picture>
+                  
+                 
+                <div class="portfolio__team">
+                  <h3 class="portfolio__title">Издание Limited Edition</h3>
+                <p class="portfolio__text">Дизайн</p>
+              </div>
+              </li>
+                <li class="portfolio__wrapper">
+                      <picture>
+                    <!--Descktop-->
+                    <source media="(min-width: 1200px )" 
+                    srcset="./imegesportfolio/photo2/img@1x_lg-7.webp 1x,
+                    ./imegesportfolio/photo2/img@2x_lg-7.webp 2x" 
+                    type="image/webp"/>
+                    <source media="(min-width: 1200px )" 
+                    srcset="./imegesportfolio/photo2/img@1x_lg-7.jpg 1x,
+                    ./imegesportfolio/photo2/img@2x_lg-7.jpg 2x" 
+                    type="image/jpg"/>
+                    <!--Tablet-->
+                    <source media="(min-width: 768px )" 
+                     srcset="./imegesportfolio/photo2/img@1x_md-7.webp 1x,
+                    ./imegesportfolio/photo2/img@2x_md-7.webp 2x"  
+                    type="image/webp"/>
+                    <source media="(min-width: 768px )" 
+                   srcset="./imegesportfolio/photo2/img@1x_md-7.jpg 1x,
+                    ./imegesportfolio/photo2/img@2x_md-7.jpg 2x" 
+                    type="image/jpg"/>
+                    <!--Mobile-->
+                    <source media="(max-width: 767px )" 
+                    srcset="./imegesportfolio/photo2/img@1x_ms-7.webp 1x,
+                    ./imegesportfolio/photo2/img@2x_ms-7.webp 2x" 
+                    type="image/webp"/>
+                    <source media="(max-width: 767px )" 
+                    srcset="./imegesportfolio/photo2/img@1x_ms-7.jpg 1x,
+                    ./imegesportfolio/photo2/img@2x_ms-7.jpg 2x" 
+                    type="image/jpg"/>
+                  <img class="prt-photo" 
+                  src="./imegesportfolio/photo2/img@1x_ms-7.jpg"
+                 alt="фото брелка" 
+                   width="370">
+                  </picture>
+                 
+                   
+                <div class="portfolio__team">
+                  <h3 class="portfolio__title">Проект LAB</h3>
+                <p class="portfolio__text">Маркетинг</p>
+              </div>
+              </li>
+                <li class="portfolio__wrapper">
+                      <picture>
+                    <!--Descktop-->
+                    <source media="(min-width: 1200px )" 
+                    srcset="./imegesportfolio/photo2/img@1x_lg-8.webp 1x,
+                    ./imegesportfolio/photo2/img@2x_lg-8.webp 2x" 
+                    type="image/webp"/>
+                    <source media="(min-width: 1200px )" 
+                    srcset="./imegesportfolio/photo2/img@1x_lg-8.jpg 1x,
+                    ./imegesportfolio/photo2/img@2x_lg-8.jpg 2x" 
+                    type="image/jpg"/>
+                    <!--Tablet-->
+                    <source media="(min-width: 768px )" 
+                     srcset="./imegesportfolio/photo2/img@1x_md-8.webp 1x,
+                    ./imegesportfolio/photo2/img@2x_md-8.webp 2x"  
+                    type="image/webp"/>
+                    <source media="(min-width: 768px )" 
+                   srcset="./imegesportfolio/photo2/img@1x_md-8.jpg 1x,
+                    ./imegesportfolio/photo2/img@2x_md-8.jpg 2x" 
+                    type="image/jpg"/>
+                    <!--Mobile-->
+                    <source media="(max-width: 767px )" 
+                    srcset="./imegesportfolio/photo2/img@1x_ms-8.webp 1x,
+                    ./imegesportfolio/photo2/img@2x_ms-8.webp 2x" 
+                    type="image/webp"/>
+                    <source media="(max-width: 767px )" 
+                    srcset="./imegesportfolio/photo2/img@1x_ms-8.jpg 1x,
+                    ./imegesportfolio/photo2/img@2x_ms-8.jpg 2x" 
+                    type="image/jpg"/>
+                  <img class="prt-photo" 
+                  src="./imegesportfolio/photo2/img@1x_ms-8.jpg"
+                   alt="фото ноутбука" 
+                   width="370">
+                  </picture>
+                 
+                   
+                <div class="portfolio__team">
+                  <h3 class="portfolio__title">Growing Business</h3>
+                <p class="portfolio__text">Приложение</p>
+              </div>
+              </li>
+            </ul>
+          </div>
+           </section>
+        
+ 
+      <!--Footer-->  
+      
+      <footer class="footer">
+        <div class="container container__footer"> 
+          <div class="footer__left">
+        <a class="logo__footer link" href=""><span class="first-three">Web</span><span class="other-footer">Studio</span></a>
+        <address>    
+          <p class="footer__address">г. Киев, пр-т Леси Украинки, 26</p> 
+            <ul class="footer__contact--type list">
+              <li><a class="footer__mail link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+              <li><a class="footer__phone link" href="tel:+380961111111"> +38 096 111 11 11</a></li>
+          </ul>
+      </address>
+    </div>
+    
+      <div class="join">
+         
+          <h3 class="join__title">Присоеденяйтесь</h3>
+          <ul class="join__list list">
+            <li class="join__item">
+              <a 
+              class="join__link link"
+              href=""
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="instsgram">
+              <svg class="join__icon" width="20px" height="20px">
+                <use href="./imeges/symbol.svg#instagram"></use>
+              </svg>
+            </a>
+            </li>
+            <li class="join__item">
+              <a 
+              class="join__link link"
+              href=""
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="twitter">
+              <svg class="join__icon" width="20px" height="20px">
+                <use href="./imeges/symbol.svg#twitter"></use>
+              </svg>
+            </a>
+            </li>
+            <li class="join__item">
+              <a 
+              class="join__link link"
+              href=""
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="facebook">
+              <svg class="join__icon" width="20px" height="20px">
+                <use href="./imeges/symbol.svg#facebook"></use>
+              </svg>
+            </a>
+            </li>
+            <li class="join__item">
+              <a 
+              class="join__link link"
+              href=""
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="linkedin">
+              <svg class="join__icon" width="20px" height="20px">
+                <use href="./imeges/symbol.svg#linkedin"></use>
+              </svg>
+            </a>
+            </li>
+
+          </ul>
+        </div>
+          <div class="mailing">
+            
+            <form class="mailing__form">
+              <label class="mailing__label">
+                <h3 class="mailing__title">Подпишитесь на рассылку</h3>
+                <input class="mailing__input" type="mailing" name="user-mail" placeholder="E-mail">
+              </label>
+            </form>
+              <div class="mailing-form__btn">
+                <form >
+              <button class="mailing__btn" type="submit">
+               <span class="mailing-btn__text">Подписаться</span> 
+               <svg class="mailing-btn__icon" width="24px" height="24px">
+                <use href="./imeges/symbol.svg#icon-send"></use>
+               </svg>
+
+              </button>
+            </form>
+              </div>
+          </div>
+    
+    </div>
+    </footer>
+  
+     
+    </body>
+  </html>
+  
+  

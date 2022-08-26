@@ -1,0 +1,70 @@
+.btn-nav {
+    display: flex;
+    gap: 8px;
+    
+    
+    @media screen and (min-width: 480px) {
+        display: flex;    
+        flex-wrap: wrap;}
+        
+         @media screen and (min-width: 768px) {
+            justify-content: center;
+         }
+    
+         @media screen and (min-width: 1200px) {
+            justify-content: center;
+         }
+      
+}
+
+.btn-nav__portfolio {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 6px 22px 6px 22px;
+    border: none;
+    background: #F5F4FA;
+    border-radius: 4px;
+
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: calc(26 / 16);
+    color: #212121;
+    background-color: #F5F4FA;
+    cursor: pointer;
+    height: 38px;
+    transition: background-color 250ms var(--cubic), color 250ms var(--cubic), box-shadow 250ms var(--cubic);
+    &:hover,
+    &:focus {
+       background-color: #2196F3;
+       color: #FFFFFF;
+       box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+        }
+}
+
+
+
+.btn1 {
+    width: 73px;
+    
+
+}
+
+.btn2 {
+    width: 128px;
+
+}
+
+.btn3 {
+    width: 145px;
+}
+
+.btn4 {
+    width: 103px;
+    margin-bottom: 50px;
+}
+
+.btn {
+    width: 130px;
+
+}
